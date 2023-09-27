@@ -1,0 +1,309 @@
+
+$color-blue: #5290EA
+$color-orange: #F28B64
+
+@font-face
+    font-family: 'MontserratT'
+    src: url('../fonts/Montserrat-Regular.ttf')
+    font-weight: normal
+
+@font-face
+    font-family: 'MontserratT'
+    src: url('../fonts/Montserrat-SemiBold.ttf')
+    font-weight: bold
+
+html
+    font-family: "MontserratT"
+    font-weight: bold
+
+.container
+    max-width: 1140px
+    margin: 0 auto
+    position: relative
+
+.main-section
+    position: relative
+    background: #F0F0F0
+    padding-top: 16px
+    min-height: 800px
+    overflow: hidden
+    &__nav-container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        height: 69px
+        align-items: center
+    &__content-container
+        display: flex
+        flex-direction: row
+        position: relative
+    &__first-ellipse
+        position: absolute
+        top: 129px
+        right: 34px
+    &__second-ellipse
+        position: absolute
+        top: 650px
+        right: -120px
+
+.nav-menu
+    &__list
+        display: flex
+        flex-direction: row
+    &__item
+        margin-right: 64px
+        font-size: 18px
+        &:last-child
+            margin-right: 0
+        a
+            text-decoration: none
+            color: black
+
+.left-wrapper
+    position: relative
+    &__img
+        z-index: 5
+        position: relative
+    &__rectangle-blue
+        width: 565.949px
+        height: 220px
+        background: $color-blue
+        border-radius: 100px
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+        transform: rotate(-64.003deg)
+        position: absolute
+        top: 150px
+        left: -50px
+        z-index: 2
+    &__rectangle-orange
+        position: absolute
+        top: 160px
+        left: -30px
+        z-index: 3
+        width: 618.428px
+        height: 220px
+        background: $color-orange
+        border-radius: 100px
+        transform: rotate(-50.806deg)
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+    &__rectangle-gray
+        position: absolute
+        top: 190px
+        left: 10px
+        z-index: 1
+        width: 608.968px
+        height: 220px
+        transform: rotate(-36.15deg)
+        border-radius: 100px
+        background: #E2E2E2
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+
+.right-wrapper
+    position: absolute
+    top: 150px
+    right: 76px
+    z-index: 1
+    &__icons-box
+        margin: 0 0 1px 0
+        padding: 0 0 0 10px
+    &__title
+        margin: 0 0 5px 0
+    &__text
+        font-size: 16px
+        margin: 0 0 20px 0
+        font-weight: normal
+
+.icons
+    display: flex
+    flex-direction: row
+    &__item
+        justify-content: center
+        align-items: center
+        display: flex
+        width: 40px
+        height: 40px
+        border-radius: 100px
+        border: 1px solid $color-blue
+        margin-right: 17px
+        &:last-child
+            margin-right: 0
+        i
+            font-size: 21px
+
+.title
+    font-size: 76px
+    position: relative
+    &__hr
+        position: absolute
+        width: 65px
+        border: none
+        border-top: 1px solid black
+        bottom: 0
+        margin: 0
+
+.buttons
+    display: flex
+    flex-direction: row
+    &__icon-btn
+        display: flex
+        flex-direction: row
+        align-items: center
+        img
+            margin: 0 12px 0 0
+    &__main-btn
+        color: #fff
+        font-size: 18px
+        font-weight: bold
+        background: $color-orange
+        border: none
+        border-radius: 100px
+        width: 200px
+        height: 60px
+        margin: 0 32px 0 0
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+    &__text
+        font-size: 16px
+        font-weight: normal
+
+.ellipse
+    width: 194px
+    height: 194px
+    border-radius: 200px
+    background: linear-gradient(144deg, #ED7B50 14.85%, #488AEA 53.25%, #2C2C2C 85.74%)
+    display: flex
+    justify-content: center
+    align-items: center
+    &_big
+        width: 282px
+        height: 282px
+        transform: rotate(45deg)
+    &__subtract
+        width: 129.333px
+        height: 129.333px
+        border-radius: 200px
+        background: #F0F0F0
+        &_big
+            width: 188px
+            height: 188px
+        &_white
+            background: #FFFFFF
+
+.second-section
+    min-height: 700px
+    position: relative
+
+    // background: #FFFFFF
+    &__container
+        padding: 32px 0 0 0
+    &__title
+        margin: 0 0 40px 0
+    &__cards-box
+        display: flex
+        justify-content: space-between
+        margin: 0 0 34px 0
+    &__icons-box
+        display: flex
+        justify-content: space-around
+    &__first-ellipse
+        position: absolute
+        z-index: -1
+        top: 80px
+        right: -60px
+
+    &__second-ellipse
+        position: absolute
+        z-index: -1
+        top: 364px
+        left: -60px
+
+.card-item
+    width: 360px
+    height: 360px
+    background: #E2E2E2
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25))
+    border-radius: 10px
+    position: relative
+    display: flex
+    align-items: flex-end
+    &__img
+        height: 335px
+    &__text
+        color: #000
+        text-align: center
+        font-size: 36px
+        transform: rotate(90deg)
+        width: 280px
+        position: absolute
+        top: 144px
+        right: -45px
+
+.card-item_blue
+    background: $color-blue
+.card-item_orange
+    background: $color-orange
+
+.icon-item
+    display: flex
+    align-items: center
+    &__img
+        width: 80px
+        height: 80px
+        margin: 0 20px 0 0
+    &__text
+        font-size: 18px
+        font-weight: normal
+        span
+            font-size: 48px
+            font-weight: bold
+
+.third-section
+    position: relative
+    background: #F0F0F0
+    min-height: 640px
+    overflow: hidden
+    z-index: 0
+    &__content-container
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        padding: 46px 18px 46px 167px
+    &__first-ellipse
+        position: absolute
+        top: 160px
+        left: 109px
+        z-index: -1
+    &__second-ellipse
+        position: absolute
+        top: -120px
+        right: -120px
+
+    &__figure
+        position: absolute
+        top: 249px
+        left: 12px
+
+    &__right-wrapper
+        max-width: 480px
+    &__right-title
+        margin: 0 0 20px 0
+    &__text
+        margin: 0 0 30px 0
+        font-size: 18px
+        font-weight: normal
+
+.title__hr_top
+    bottom: 75px
+
+.footer
+    &__img
+        position: absolute
+        bottom: 0
+        left: -250px
+    &__container
+        min-height: 272px
+        display: flex
+        align-items: center
+        justify-content: flex-end
+    &__title
+        margin: 0 0 20px 0
