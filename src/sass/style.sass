@@ -27,6 +27,8 @@ html
     padding-top: 16px
     min-height: 800px
     overflow: hidden
+    &__burger
+        display: none
     &__nav-container
         display: flex
         flex-direction: row
@@ -58,6 +60,7 @@ html
         a
             text-decoration: none
             color: black
+
 
 .left-wrapper
     position: relative
@@ -191,7 +194,7 @@ html
 .second-section
     min-height: 700px
     position: relative
-
+    overflow: hidden
     // background: #FFFFFF
     &__container
         padding: 32px 0 0 0
@@ -307,3 +310,290 @@ html
         justify-content: flex-end
     &__title
         margin: 0 0 20px 0
+
+
+// =====================Адаптивная верстка============================
+// Обычный desctop сайт
+// @media ( max-width: 1200px )
+//     .container
+//         width: 1140px
+
+
+// Мал комп или горизонтальный планшет
+@media ( max-width: 1199px )
+    .container 
+        width: 960px
+    // Первая секция
+    .main-section 
+        min-height: 690px
+        &__second-ellipse
+            top: 550px
+            right: -130px
+    .left-wrapper
+        &__img
+            width: 750px
+        &__rectangle-blue
+            width: 500px
+            height: 200px
+            top: 130px
+            left: -55px
+        &__rectangle-orange
+            width: 540px
+            height: 200px
+            top: 150px
+            left: -40px
+        &__rectangle-gray
+            width: 520px
+            height: 200px
+            top: 175px
+            left: 5px
+    .right-wrapper 
+        top: 80px
+        right: 20px
+    .main-section__first-ellipse
+        top: 55px
+        right: 5px
+    
+    // Вторая секция
+    .second-section
+        min-height: 620px
+    .card-item
+        width: 300px
+        height: 300px
+        &__img
+            height: 280px
+        &__text
+            top: 115px
+            right: -75px
+    .icon-item__img 
+        margin: 0 10px 0 0
+
+    // Третья секция 
+    .third-section
+        &__content-container
+            padding-left: 40px
+        &__right-wrapper
+            max-width: 420px
+        &__second-ellipse
+            z-index:  -1
+    
+    // Футер
+    .footer__img
+        width: 700px
+        left: -330px
+        
+
+// Вертикальный планшет
+@media ( max-width: 991px )
+    .container
+        width: 720px
+    
+    // Первая секция
+    .nav-menu__item
+        font-size: 16px
+    .left-wrapper
+        &__img
+            width: 600px
+        &__rectangle-blue
+            width: 400px
+            top: 110px
+            left: -45px
+            height: 150px
+        &__rectangle-orange
+            width: 420px
+            top: 130px
+            left: -30px  
+            height: 150px
+        &__rectangle-gray
+            width: 400px
+            top: 146px
+            left: 0px
+            height: 150px
+    .icons__item 
+        margin-right: 10px
+    .title 
+        font-size: 56px
+        &__hr 
+            width: 50px
+    .buttons
+        &__main-btn 
+            font-size: 16px
+            width: 170px
+            height: 50px
+            margin: 0 10px 0 0
+        &__text
+            font-size: 14px
+    .ellipse 
+        width: 150px
+        height: 150px
+        &__subtract
+            width: 100px
+            height: 100px
+    .right-wrapper 
+        top: 50px
+        right: -15px
+        &__icons-box 
+            padding: 0
+        img
+            margin-right: 6px
+            width: 40px
+        &__text
+            font-size: 14px
+    .main-section
+        min-height: 570px
+        &__first-ellipse 
+            top: 40px
+            right: -15px
+        &__second-ellipse
+            top: 450px
+            right: -120px
+
+    // Вторая секция
+    .second-section
+        &__title 
+            padding: 0 0 0 80px
+        &__cards-box
+            flex-direction: column
+            align-items: center
+        &__icons-box
+            flex-wrap: wrap
+        &__first-ellipse
+            top: 55px
+            right: 110px
+        &__second-ellipse
+            top: 800px  
+            left: 100px
+    .card-item
+        width: 360px
+        height: 360px
+        margin: 0 0 20px 0
+        &:last-child
+            margin: 0
+        &__img
+            height: 335px
+        &__text
+            width: 280px
+            top: 144px
+            right: -45px
+    .icon-item
+        display: flex
+        align-items: center
+        margin: 0 0 20px 0
+        &__img
+            width: 80px
+            height: 80px
+            margin: 0 20px 0 0
+        &__text
+            font-size: 18px
+            font-weight: normal
+            width: 150px
+            span
+                font-size: 48px
+                font-weight: bold
+    // Третья секция
+    .third-section
+        &__content-container
+            padding-left: 0
+            padding-right: 0
+        &__left-title
+            padding-left: 40px
+        &__first-ellipse 
+            top: 180px
+            left: 70px
+        &__second-ellipse 
+            top: -145px
+            right: -145px
+        &__right-wrapper
+            max-width: 330px
+        &__figure
+            width: 200px
+            top: 250px
+            left: -20px
+    .ellipse_big
+        width: 282px
+        height: 282px
+    .ellipse__subtract_big
+        width: 182px
+        height: 182px
+    .title__hr_top
+        bottom: 55px
+
+    // Футер
+    .footer
+        &__icons-box
+            display: flex
+            align-items: center
+            flex-direction: row
+            justify-content: center
+        &__img
+            width: 400px
+            left: -115px
+        &__container
+            min-height: 190px
+        &__title
+            margin: 0 0 10px 0
+
+//  Горизонтальный телефон
+@media ( max-width: 767px )
+    .container
+        width: 540px
+    .nav-menu
+        // display: none
+        position: fixed
+        top: 0
+        right: -50%
+        width: 50%
+        height: 100vh
+        background: $color-blue
+        z-index: 10
+        transition: 1s all
+        &__list
+            display: flex
+            flex-direction: column
+            justify-content: space-evenly
+            align-items: center
+            height: 100%
+        &__item
+            margin: 0
+            font-size: 20px
+    .burger
+        position: absolute
+        top: 40px
+        right: 30px
+        width: 30px
+        height: 14px
+        z-index: 11
+        span
+            height: 2px
+            width: 100% 
+            margin: 0 0 4px 0
+            background: #000
+            display: block
+            transition: 1s all
+            &:last-child
+                margin: 0
+
+    .burger_active
+        span
+            margin: 0 0 -2px 0
+            &:nth-child(1)
+                transform: translateY(3px) rotate(-45deg)
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                transform: translateY(3px) rotate(45deg)
+
+    .nav-menu_active
+        right: 0
+
+                
+
+
+    
+// Вертикальный телефон
+@media ( max-width: 575px )
+    .container
+        width: 100%
+    
+    
+    
