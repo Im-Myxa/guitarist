@@ -537,6 +537,16 @@ html
 @media ( max-width: 767px )
     .container
         width: 540px
+    // Первая секция 
+    .main-section
+        min-height: 470px
+        &__nav-container
+            margin: 0 0 20px 0
+        &__first-ellipse
+            display: none
+        &__second-ellipse
+            top: 320px
+            right: -80px
     .nav-menu
         // display: none
         position: fixed
@@ -546,7 +556,7 @@ html
         height: 100vh
         background: $color-blue
         z-index: 10
-        transition: 1s all
+        transition: 0.5s all
         &__list
             display: flex
             flex-direction: column
@@ -569,7 +579,7 @@ html
             margin: 0 0 4px 0
             background: #000
             display: block
-            transition: 1s all
+            transition: 0.5s all
             &:last-child
                 margin: 0
 
@@ -586,6 +596,87 @@ html
     .nav-menu_active
         right: 0
 
+    .left-wrapper
+        &__img
+            width: 450px
+        &__rectangle-blue
+            display: none
+        &__rectangle-orange
+            display: none
+        &__rectangle-gray
+            display: none
+
+    .right-wrapper
+        top: 15px
+        &__icons-box
+            display: none
+        &__button
+            justify-content: flex-end
+            padding-right: 20px
+        &__icon-btn 
+            display: none
+
+    .title 
+        font-size: 48px
+    .buttons__main-btn
+        font-size: 14px
+        width: 150px
+        margin: 0
+
+    // Вторая секция
+    .second-section
+        &__container
+            padding: 20px 0 0 0 
+        &__title 
+            display: flex
+            justify-content: center
+            padding: 0
+            hr 
+                position: absolute
+                top: 47px
+                left: 138px
+        &__first-ellipse
+            top: 40px
+            right: 20px
+        &__second-ellipse 
+            top:  1120px
+            left: 20px
+        &__icon-item
+            margin: 0 0 34px 0
+
+    // Третья секция 
+    .third-section
+        min-height: 478px
+        &__content-container
+            padding-top: 20px
+        &__left-title
+            display: none
+        &__first-ellipse
+            top: 328px
+            left: 430px
+        &__figure
+            top: 90px
+            left: 0
+        &__right-wrapper
+            min-width: 100%
+            hr
+                position: absolute
+                top: 47px
+                left: 5px
+        &__button 
+            gap: 10px
+
+    // Футер
+    .footer
+        &__container
+            min-height: 170px
+        &__img
+            display: none
+        &__wrapper 
+            width: 100%
+            display: flex
+            flex-direction: column
+            align-items: flex-start
                 
 
 
@@ -594,6 +685,80 @@ html
 @media ( max-width: 575px )
     .container
         width: 100%
+    // Первая секция
+    .main-section
+        min-height: 400px
+        &__first-ellipse 
+            
+            display: none
+        &__second-ellipse
+            display: none
+    .left-wrapper
+        width: 100%
+        &__img
+            display: none
+        &__rectangle-blue
+            display: unset
+            max-width: 250px
+            height: 120px
+            top: 70px
+            left: calc( 100% - 200px)
+            transform: rotate(74deg)
+            z-index: 0
+        &__rectangle-orange
+            display: unset
+            width: 260px
+            height: 120px
+            top: 90px
+            left: calc( 100% - 220px)
+            transform: rotate(50deg)
+
+            z-index: 1
+        &__rectangle-gray
+            display: unset
+            width: 250px
+            height: 120px
+            top: 115px
+            left: calc( 100% - 230px)
+            transform: rotate(26deg)
+            z-index: 0
+        
+    .right-wrapper
+        width: 100%
+        top: 60px
+        &__icons-box
+            display: flex
+        &__text
+            font-size: 14px
+            margin: 0 0 30px 0
+        &__button
+            justify-content: start
+            margin: 0 0 30px 0
+            padding: 0
+        &__icon-btn
+            display: flex
+    .buttons__main-btn
+        margin: 0 20px 0 0
+    // Вторая секция
+    .second-section
+        &__title
+            margin: 0 0 30px 0
+        &__first-ellipse 
+            top: 1150px
+            right: -25px
+            transform: rotate(-60deg)
+        &__second-ellipse
+            display: none
+    // Третья секцию
+    .third-section
+        &__content-container
+            padding: 20px 0
+        &__text 
+            margin: 0 0 20px 0
+            padding: 0 0 0 3px
+        &__button 
+            justify-content: space-evenly
+    // Футер
     
     
     
